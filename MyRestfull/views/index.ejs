@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+
+<h1 class="ui container">THIS IS THE INDEX PAGE!</h1>
+
+<% b.forEach(function(el){ %>
+    <div class="ui container">
+        <h2></h2><%= el.title %></h2>
+        <br><image src="<%= el.image %>">
+        <br><span><i><%= el.created %></i></span>
+        <p><i><b><%= el.body %></b></i></p>    
+    </div>
+<% }); %>
+
+<% include ./partials/footer %>
